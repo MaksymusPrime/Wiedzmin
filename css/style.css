@@ -15,6 +15,10 @@ html, body {
     --transition:  1.75s cubic-bezier(.2, .6, 0, 1);
 }
 
+ .audio {
+    display: none;
+ }
+
 .slider {
     height: 100%;
    

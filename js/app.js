@@ -11,3 +11,6 @@ new Swiper('.slider', {
     parallax: true,
   
 });
+
+myVid=document.getElementById("myPlayer");
+myVid.volume=0.5;
