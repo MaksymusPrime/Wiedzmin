@@ -19,20 +19,30 @@ html, body {
     display: none;
  }
 
- .scrolli    {
-    color: bisque;
-    position: relative;
-    margin-top: 50px;
-    font-size: 24px;
-      display: flex;
-    box-sizing: border-box;
-       justify-content: center;
-   align-content: center;
-   align-items: center;
-    z-index: 1;
+ .scrollimg  img  {
+    
+    height: 220px;
+    position: absolute;
+    margin-top: 5px;
+    display: flex;
+    left: 730px;
+    z-index: 100;
+    opacity: 1;
+    animation: disappear 10s linear 0s infinite;
 
 
  }
+
+
+ .hidden {
+    
+    opacity: 0;
+ } 
+    @keyframes disappear {
+        from {opacity: 1;}
+        to {opacity: 0;}
+    }
+
 
 .slider {
     height: 100%;

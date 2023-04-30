@@ -12,6 +12,8 @@
 <script src="libs/swiper/swiper-bundle.min.js" defer></script>
 <script src="libs/particles/particles.js" defer></script>
 
+
+
 <link rel="stylesheet" href="css/style.css">
 <script src="js/app.js" defer></script>
 
@@ -30,6 +32,19 @@
 
 <body>
 
+    <div class="scrollimg" id="sc">
+        <img src="img/scroll.gif" alt="scroll">
+    </div>
+
+    <script>
+        window.setInterval(function () {
+         let gif = document.querySelector('.scrollimg');
+        
+           gif.classList.add('hidden');
+         }
+        , 10000); // or 7000 or whatever ;)
+     
+     </script>
        
 <div class="swiper slider">
     <div class="swiper-wrapper slider_wrapper">
@@ -55,7 +70,7 @@
             <div class="slider_layer" data-swiper-parallax="48%" style="background-image: url(img/screen-3/layer-back.jpg)"></div>
             <div class="slider_layer" data-swiper-parallax="30%" style="background-image: url(img/screen-3/layer-middle.png)"></div>
             <div class="slider_layer" data-swiper-parallax="29%" style="background-image: url(img/screen-3/layer-ciri.png)"></div>
-            <canvas class="particles slider_layer" data-swiper-parallax="18%" data-color="#C75F58"></canvas>
+            <canvas class="particles slider_layer" data-swiper-parallax="18%" data-color="#FC564A"></canvas>
             <div class="slider_layer" data-swiper-parallax="16%" style="background-image: url(img/screen-3/layer-front.png)"></div>
         </div>
 
